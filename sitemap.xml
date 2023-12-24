@@ -6,7 +6,32 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://gitmickymike.github.io/algo-templates/gcd-and-lcm/</loc>
+         <lastmod>2023-12-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gitmickymike.github.io/algo-templates/templates/</loc>
+         <lastmod>2023-12-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://gitmickymike.github.io/junior-notes/geography/</loc>
+         <lastmod>2023-12-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gitmickymike.github.io/oi-tips/accelerate-ios/</loc>
+         <lastmod>2023-12-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gitmickymike.github.io/oi-tips/gcc-optimize/</loc>
+         <lastmod>2023-12-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gitmickymike.github.io/oi-tips/qread-and-qwrite/</loc>
          <lastmod>2023-12-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
