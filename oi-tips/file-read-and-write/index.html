@@ -12,13 +12,13 @@
         <meta name="author" content="MickyMike">
       
       
-        <link rel="canonical" href="https://gitmickymike.github.io/oi-tips/accelerate-ios/">
+        <link rel="canonical" href="https://gitmickymike.github.io/oi-tips/file-read-and-write/">
       
       
-        <link rel="prev" href="../../algo-templates/gcd-and-lcm/">
+        <link rel="prev" href="../qread-and-qwrite/">
       
       
-        <link rel="next" href="../qread-and-qwrite/">
+        <link rel="next" href="../gcc-optimize/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Accelerate IOS - MickyMike's Site</title>
+        <title>File Read & Write - MickyMike's Site</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#untie" class="md-skip">
+        <a href="#c-file-freopen" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Accelerate IOS
+              File Read & Write
             
           </span>
         </div>
@@ -280,7 +280,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../accelerate-ios/" class="md-tabs__link">
           
   
   OI Tips
@@ -629,28 +629,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Accelerate IOS
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../accelerate-ios/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -659,90 +641,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#untie" class="md-nav__link">
-    <span class="md-ellipsis">
-      Untie
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Untie">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#why-need-to-untie" class="md-nav__link">
-    <span class="md-ellipsis">
-      Why need to untie
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-to-untie" class="md-nav__link">
-    <span class="md-ellipsis">
-      How to untie
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#endl" class="md-nav__link">
-    <span class="md-ellipsis">
-      endl
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="endl">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-will-endl-do" class="md-nav__link">
-    <span class="md-ellipsis">
-      What will endl do
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-to-accelerate-endl" class="md-nav__link">
-    <span class="md-ellipsis">
-      How to accelerate endl
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -773,10 +671,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../file-read-and-write/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    File Read & Write
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -785,6 +701,90 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#c-file-freopen" class="md-nav__link">
+    <span class="md-ellipsis">
+      C: FILE freopen()
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C: FILE freopen()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-access-mode-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Access Mode String
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c-fstream-fiostream" class="md-nav__link">
+    <span class="md-ellipsis">
+      C++: fstream fiostream
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C++: fstream fiostream">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#headfile-fiostream" class="md-nav__link">
+    <span class="md-ellipsis">
+      headfile: &lt;fiostream&gt;
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-open" class="md-nav__link">
+    <span class="md-ellipsis">
+      function open()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status-indicator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Status Indicator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -913,28 +913,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#untie" class="md-nav__link">
+  <a href="#c-file-freopen" class="md-nav__link">
     <span class="md-ellipsis">
-      Untie
+      C: FILE freopen()
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Untie">
+    <nav class="md-nav" aria-label="C: FILE freopen()">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#why-need-to-untie" class="md-nav__link">
+  <a href="#file-access-mode-string" class="md-nav__link">
     <span class="md-ellipsis">
-      Why need to untie
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-to-untie" class="md-nav__link">
-    <span class="md-ellipsis">
-      How to untie
+      File Access Mode String
     </span>
   </a>
   
@@ -946,28 +937,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#endl" class="md-nav__link">
+  <a href="#c-fstream-fiostream" class="md-nav__link">
     <span class="md-ellipsis">
-      endl
+      C++: fstream fiostream
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="endl">
+    <nav class="md-nav" aria-label="C++: fstream fiostream">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#what-will-endl-do" class="md-nav__link">
+  <a href="#headfile-fiostream" class="md-nav__link">
     <span class="md-ellipsis">
-      What will endl do
+      headfile: &lt;fiostream&gt;
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#how-to-accelerate-endl" class="md-nav__link">
+  <a href="#function-open" class="md-nav__link">
     <span class="md-ellipsis">
-      How to accelerate endl
+      function open()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status-indicator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Status Indicator
     </span>
   </a>
   
@@ -996,37 +996,192 @@
   
 
 
-  <h1>Accelerate IOS</h1>
+  <h1>File Read & Write</h1>
 
-<h2 id="untie">Untie<a class="headerlink" href="#untie" title="Permanent link">&para;</a></h2>
-<h3 id="why-need-to-untie">Why need to untie<a class="headerlink" href="#why-need-to-untie" title="Permanent link">&para;</a></h3>
-<p>Original cin &amp; cout <code>&lt;iostream&gt;</code> are very slow, because they are tied to scanf &amp; printf <code>&lt;cstdio&gt;</code>.</p>
-<h3 id="how-to-untie">How to untie<a class="headerlink" href="#how-to-untie" title="Permanent link">&para;</a></h3>
-<div class="language-cpp highlight"><span class="filename">Untie</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">ios</span><span class="o">::</span><span class="n">sync_with_stdio</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<h2 id="c-file-freopen">C: FILE <code>freopen()</code><a class="headerlink" href="#c-file-freopen" title="Permanent link">&para;</a></h2>
+<p>head file: `<cstdio></p>
+<div class="language-cpp highlight"><span class="filename">Definition</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">std</span><span class="o">::</span><span class="kt">FILE</span><span class="o">*</span><span class="w"> </span><span class="nf">freopen</span><span class="p">(</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">filename</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">mode</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">FILE</span><span class="o">*</span><span class="w"> </span><span class="n">stream</span><span class="w"> </span><span class="p">);</span>
 </span></code></pre></div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>The untied cin &amp; cout are actually faster than scanf &amp; printf.</p>
+<h3 id="file-access-mode-string">File Access Mode String<a class="headerlink" href="#file-access-mode-string" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>From <a href="https://en.cppreference.com/w/cpp/io/c/freopen">CPPReference</a></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">File access mode string</th>
+<th style="text-align: center;">Meaning</th>
+<th style="text-align: center;">Explanation</th>
+<th style="text-align: center;">Action if file  already exists</th>
+<th style="text-align: center;">Action if file  does not exist</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">"r"</td>
+<td style="text-align: center;">read</td>
+<td style="text-align: center;">Open a file for reading</td>
+<td style="text-align: center;">read from start</td>
+<td style="text-align: center;">return NULL and set error</td>
+</tr>
+<tr>
+<td style="text-align: center;">"w"</td>
+<td style="text-align: center;">write</td>
+<td style="text-align: center;">Create a file for writing</td>
+<td style="text-align: center;">destroy contents</td>
+<td style="text-align: center;">create new</td>
+</tr>
+<tr>
+<td style="text-align: center;">"a"</td>
+<td style="text-align: center;">append</td>
+<td style="text-align: center;">Append to a file</td>
+<td style="text-align: center;">write to end</td>
+<td style="text-align: center;">create new</td>
+</tr>
+<tr>
+<td style="text-align: center;">"r+"</td>
+<td style="text-align: center;">read extended</td>
+<td style="text-align: center;">Open a file for read/write</td>
+<td style="text-align: center;">read from start</td>
+<td style="text-align: center;">return NULL and set error</td>
+</tr>
+<tr>
+<td style="text-align: center;">"w+"</td>
+<td style="text-align: center;">write extended</td>
+<td style="text-align: center;">Create a file for read/write</td>
+<td style="text-align: center;">destroy contents</td>
+<td style="text-align: center;">create new</td>
+</tr>
+<tr>
+<td style="text-align: center;">"a+"</td>
+<td style="text-align: center;">append extended</td>
+<td style="text-align: center;">Open a file for read/write</td>
+<td style="text-align: center;">write to end</td>
+<td style="text-align: center;">create new</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>std::freopen is the only way to change the narrow/wide orientation of a stream once it has been established by an I/O operation or by std::fwide.</p>
 </div>
-<h2 id="endl">endl<a class="headerlink" href="#endl" title="Permanent link">&para;</a></h2>
-<h3 id="what-will-endl-do">What will endl do<a class="headerlink" href="#what-will-endl-do" title="Permanent link">&para;</a></h3>
-<p>endl is used not only to break lines, but also to <strong>empty the buffer</strong>.</p>
-<p>It can be about <strong>10 times slower</strong> than the "\n".</p>
-<h3 id="how-to-accelerate-endl">How to accelerate endl<a class="headerlink" href="#how-to-accelerate-endl" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Use '\n' Directly</label><label for="__tabbed_1_2">Use Macro Definition</label></div>
+<details class="example">
+<summary>Example</summary>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cstdio&gt;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="n">freopen</span><span class="p">(</span><span class="s">&quot;in.in&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;r&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">stdin</span><span class="p">);</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="n">freopen</span><span class="p">(</span><span class="s">&quot;out.out&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;w&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">stdout</span><span class="p">);</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="p">}</span>
+</span></code></pre></div>
+</details>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you have used the <a href="../accelerate-ios/#untie">untie</a> operation, you shouldn't use freopen because you would have already disabled <code>&lt;cstdio&gt;</code>.</p>
+</div>
+<details class="tip" open="open">
+<summary>Tip</summary>
+<p>If you are using an <a href="../../some-websites/#online-judges">Online Judge</a>, you can add this macro definition to your code:</p>
+<div class="language-cpp highlight"><span class="filename">ONLINE_JUDGE</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cp">#ifdef ONLINE_JUDGE</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="cp">#else</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="cp">#endif</span>
+</span></code></pre></div>
+<p>Most OJ will use this macro definition, while your computer won't have one, thus you can add freopen in ONLINE_JUDGE so that you can use freopen as it'll be disabled on your OJ.</p>
+<details class="example">
+<summary>Example</summary>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="cp">#ifdef ONLINE_JUDGE</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="cp">#else   </span><span class="c1">// when run on local</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">        </span><span class="n">freopen</span><span class="p">(</span><span class="s">&quot;in.in&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;r&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;stdin&quot;</span><span class="p">);</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">        </span><span class="n">freopen</span><span class="p">(</span><span class="s">&quot;out.out&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;w&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;stdout&quot;</span><span class="p">);</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="cp">#endif</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="p">}</span>
+</span></code></pre></div>
+</details>
+</details>
+<h2 id="c-fstream-fiostream">C++: fstream <code>fiostream</code><a class="headerlink" href="#c-fstream-fiostream" title="Permanent link">&para;</a></h2>
+<h3 id="headfile-fiostream">headfile: <code>&lt;fiostream&gt;</code><a class="headerlink" href="#headfile-fiostream" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Read</label><label for="__tabbed_1_2">Write</label><label for="__tabbed_1_3">Read &amp; Write</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Goodbye endl :)&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="sc">&#39;\n&#39;</span><span class="p">;</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">ifstream</span><span class="w"> </span><span class="n">in</span><span class="p">(</span><span class="s">&quot;FILENAME&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">ios</span><span class="o">::</span><span class="n">in</span><span class="p">);</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cp">#define endl &#39;\n&#39;</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">ofstream</span><span class="w"> </span><span class="n">out</span><span class="p">(</span><span class="s">&quot;FILENAME, ios::out);</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">fstream</span><span class="w"> </span><span class="n">foi</span><span class="p">(</span><span class="s">&quot;FILENAME&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">ios</span><span class="o">::</span><span class="n">in</span><span class="o">|</span><span class="n">ios</span><span class="o">::</span><span class="n">out</span><span class="p">);</span>
 </span></code></pre></div>
 </div>
 </div>
 </div>
+<h3 id="function-open">function <code>open()</code><a class="headerlink" href="#function-open" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">General Using</label><label for="__tabbed_2_2">Protocol</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">open</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">filename</span><span class="p">,</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="n">ios_base</span><span class="o">::</span><span class="n">openmode</span><span class="w"> </span><span class="n">mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ios_base</span><span class="o">::</span><span class="n">in</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">ios</span><span class="o">::</span><span class="n">base</span><span class="o">::</span><span class="n">out</span><span class="p">);</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">open</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">wchar_t</span><span class="w"> </span><span class="o">*</span><span class="n">_Filename</span><span class="p">,</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">    </span><span class="n">ios_base</span><span class="o">::</span><span class="n">in</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">ios_base</span><span class="o">::</span><span class="n">out</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">prot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ios_base</span><span class="o">::</span><span class="n">_Openprot</span><span class="p">);</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<details class="parameters">
+<summary>Parameters</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">mode</label><label for="__tabbed_3_2">prot</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="w">    </span><span class="n">ios</span><span class="o">::</span><span class="n">app</span><span class="o">:</span><span class="w"> </span><span class="c1">//open the file as append  </span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="n">ios</span><span class="o">::</span><span class="n">ate</span><span class="o">:</span><span class="w"> </span><span class="c1">//Locate the file to the end of the file when it is opened. ios:app includes this property.  </span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">    </span><span class="n">ios</span><span class="o">::</span><span class="n">binary</span><span class="o">:</span><span class="w"> </span><span class="c1">//Open the file as binary, the default is text. See the previous section for the difference between the two methods  </span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">    </span><span class="n">ios</span><span class="o">::</span><span class="n">in</span><span class="o">:</span><span class="w"> </span><span class="c1">// the file is opened as input (file data is entered into memory)  </span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="w">    </span><span class="n">ios</span><span class="o">::</span><span class="n">out</span><span class="o">:</span><span class="w"> </span><span class="c1">//files are opened as output (memory data is output to the file)  </span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="w">    </span><span class="n">ios</span><span class="o">::</span><span class="n">nocreate</span><span class="o">:</span><span class="w"> </span><span class="c1">//doesn&#39;t create the file, so it fails to open if the file doesn&#39;t exist  </span>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="w">    </span><span class="n">ios</span><span class="o">::</span><span class="n">noreplace</span><span class="o">:</span><span class="w"> </span><span class="c1">// doesn&#39;t overwrite the file, so opening the file fails if the file exists  </span>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="w">    </span><span class="n">ios</span><span class="o">::</span><span class="n">trunc</span><span class="o">:</span><span class="w"> </span><span class="c1">// set file length to 0 if file exists</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>    0: Ordinary file, open access  
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>    1: Read-only file  
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    2: Implicit files  
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    4: system file 
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can use "or" or "+" to connect the above attributes, such as 3 or 1 | 2 is to open the file with read-only and implicit attributes.</p>
+</div>
+</details>
+<h3 id="status-indicator">Status Indicator<a class="headerlink" href="#status-indicator" title="Permanent link">&para;</a></h3>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">is_open</span><span class="p">()</span><span class="w"> </span><span class="c1">//whether the file is normally open</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">bad</span><span class="p">()</span><span class="w"> </span><span class="c1">// read and write process whether the error</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="n">fail</span><span class="p">()</span><span class="w"> </span><span class="c1">// read and write process whether the error </span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="n">eof</span><span class="p">()</span><span class="w"> </span><span class="c1">// read the file to reach the end of the file, return true</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="n">good</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="c1">// any of the above return true, this will return false</span>
+</span></code></pre></div>
 
 
 
@@ -1059,54 +1214,6 @@
 
 
 
-
-  <h2 id="__comments">Comments</h2>
-  <!-- Insert generated snippet here -->
-  <script src="https://giscus.app/client.js"
-        data-repo="gitmickymike/gitmickymike.github.io"
-        data-repo-id="R_kgDOK9M1WQ"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOK9M1Wc4Cb9pn"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-  </script>
-
-  <!-- Synchronize Giscus theme with palette -->
-  <script>
-    var giscus = document.querySelector("script[src*=giscus]")
-
-    /* Set palette on initial load */
-    var palette = __md_get("__palette")
-    if (palette && typeof palette.color === "object") {
-      var theme = palette.color.scheme === "slate" ? "dark" : "light"
-      giscus.setAttribute("data-theme", theme) 
-    }
-
-    /* Register event handlers after documented loaded */
-    document.addEventListener("DOMContentLoaded", function() {
-      var ref = document.querySelector("[data-md-component=palette]")
-      ref.addEventListener("change", function() {
-        var palette = __md_get("__palette")
-        if (palette && typeof palette.color === "object") {
-          var theme = palette.color.scheme === "slate" ? "dark" : "light"
-
-          /* Instruct Giscus to change theme */
-          var frame = document.querySelector(".giscus-frame")
-          frame.contentWindow.postMessage(
-            { giscus: { setConfig: { theme } } },
-            "https://giscus.app"
-          )
-        }
-      })
-    })
-  </script>
 
                 
               </article>
